@@ -1,0 +1,18 @@
+.bg-custom-green{
+  background-color: #00cba9;
+}
+.logo-name{
+  font-weight: bolder;
+    text-transform: uppercase;
+}
+.custom-green{
+  color: #00cba9;
+}
+.custom-btn-green{
+  background: #00cba9;
+  color: #fff;
+}
+.custom-btn-green:hover{
+  background: #056555;
+  color: #fff;
+}

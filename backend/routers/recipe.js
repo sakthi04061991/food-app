@@ -1,0 +1,12 @@
+const express = require("express");
+const { getRecipes, getRecipe, addRecipe, editRecipe, deleteRecipe, upload } = require("../controllers/receipe");
+const verifyToken = require("../middleware/auth")
+const router = express.Router();
+
+router.get("/",getRecipes);
+router.get("/:id",getRecipe);
+router.post("/",upload.single('coverImage'),verifyToken, addRecipe);
+router.put("/:id",upload.single('coverImage'),verifyToken,editRecipe);
+router.delete("/:id",deleteRecipe);
+
+module.exports = router;
